@@ -6,7 +6,7 @@ import re
 
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -25,11 +25,12 @@ with open("README.md") as f:
 setup(
     name="jpgis-dem",
     version=version,
+    packages=find_packages(),
     description="Convert JPGIS .xml DEM files to geotiffs.",
     long_description=readme,
     long_description_content_type='text/markdown',
-    url="https://github.com/gpxz/jpgis-dem",
-    download_url="https://github.com/gpxz/jpgis-dem",
+    url="https://github.com/lifanchu/jpgis-dem",
+    download_url="https://github.com/lifanchu/jpgis-dem",
     author="Andrew Nisbet",
     author_email="andrew@gpxz.io",
     license="The MIT License",
